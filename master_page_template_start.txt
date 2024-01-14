@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>硕士项目</title>
+</head>
+<body>
+    <section class="portfolio" id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h1>硕士项目</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <!-- 搜索框 -->
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="输入关键词...">
+                    </div>
+                    <!-- 筛选按钮... -->
+                    <ul id="region-btns">
+                        <li data-target="all">所有项目</li>
+                        <li data-target="美国">美国</li>
+                        <li data-target="英国">英国</li>
+                        <li data-target="欧洲">欧洲</li>
+                        <li data-target="亚洲">亚洲</li>
+                    </ul>
+                    <ul id="keyword-btns">
+                        <!-- 在这里添加其他关键词按钮 -->
+                        <li data-target="建筑">建筑</li>
+                        <li data-target="规划">规划</li>
+			<li data-target="可持续">可持续</li>
+			<li data-target="金融">金融</li>
+			<li data-target="工程">工程</li>
+			<li data-target="地理信息">地理信息</li>
+			<li data-target="数据">数据</li>
+			<li data-target="交互">交互</li>
+                        <!-- 更多关键词按钮 -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="portfolio-gallery">
+
+              

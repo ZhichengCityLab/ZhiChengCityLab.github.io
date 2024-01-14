@@ -1,0 +1,20 @@
+[2]
+
+项目名称：Master of Science Geomatics（地理信息科学硕士）
+
+学校：Delft University of Technology（代尔夫特理工大学）
+
+院系：Faculty of Architecture and the Built Environment（建筑与环境学院）
+
+关键词：地理数据，数据分析，地理数据建模，数据可视化，编程语言，遥感技术，3D建模，GIS，地图制作，严肃游戏，模拟，可视化，城市规划，灾害管理，地理设计，基于位置的服务，土地管理
+
+项目概述：地理信息科学硕士项目关注地理数据的获取、建模、分析、管理和可视化，以获取对建筑和自然环境的更深入理解。学生将学习使用先进的数据分析、地理数据建模和数据可视化技术，包括Python、C++和SQL等编程语言。此外，学生还将学习遥感技术，以测量和观察我们的环境，特别是那些肉眼无法看到的特征。
+
+项目时长：24个月
+
+申请截止日期：每年9月开学（具体日期未给出）
+
+网页链接： https://www.tudelft.nl/en/education/programmes/masters/geomatics/msc-geomatics
+
+
+

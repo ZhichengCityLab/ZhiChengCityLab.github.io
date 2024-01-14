@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    position: relative; /* 确保伪元素相对于此元素定位 */
+    text-align: center; /* 中心对齐文本 */
+}
+
+    .section-title h1 {
+        display: inline-block; /* inline-block 将只占据内容所需的宽度 */
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #000000;
+        margin: 0;
+        position: relative; /* 为:before 伪元素提供定位上下文 */
+        padding-bottom: 10px; /* 留出空间显示横线 */
+    }
+
+        .section-title h1:before {
+            content: '';
+            position: absolute;
+            left: 50%; /* 设置横线左侧距离父元素的宽度为50% */
+            transform: translateX(-33%); /* 使用transform向左移动横线宽度的50% */
+            width: 160px; /* 这是横线的宽度 */
+            height: 3px;
+            background-color: #febd01;
+            bottom: 0; /* 定位到h1元素的底部 */
+        }
+
+.search-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .search-box input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.portfolio {
+    background-color: white;
+    padding: 100px 7px;
+}
+
+    .portfolio .section-title h1:before {
+        left: 30%;
+    }
+
+    .portfolio .filter-buttons {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+        .portfolio .filter-buttons ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+            .portfolio .filter-buttons ul li {
+                color: #000000;
+                font-weight: 500;
+                font-size: 16px;
+                display: inline-block;
+                margin: 0px 8px;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding-bottom: 0px;
+            }
+
+                .portfolio .filter-buttons ul li.active {
+                    color: #febd01;
+                    border-bottom: 2px solid #febd01;
+                }
+
+    .portfolio .portfolio-gallery {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .portfolio .portfolio-gallery .item {
+            flex: 0 0 30%;
+            max-width: 30%;
+            position: relative;
+            padding: 8px; /* 根据需要调整，保持内边距为卡片内容提供空间 */
+            margin: 15px; /* 增加外边距来增加卡片之间的空间，可以根据需要调整数值 */
+            text-align: center; /* 使内容居中 */
+            background-color: #fff; /* 卡片背景颜色 */
+            border-radius: 10px; /* 卡片圆角大小 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 卡片阴影样式，可根据需要调整 */
+            overflow: hidden; /* 隐藏超出圆角的内容 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 可选：添加过渡效果 */
+        }
+
+            /* 当鼠标悬停在卡片上时，可选的放大效果和阴影变化 */
+            .portfolio .portfolio-gallery .item:hover {
+                transform: scale(1.00); /* 放大卡片 */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 加深阴影 */
+            }
+
+            .portfolio .portfolio-gallery .item .inner {
+                position: relative;
+                width: 100%; /* 设置宽度为100% */
+                padding-top: 100%; /* 设置顶部内边距为100%，以维持1:1的宽高比 */
+                overflow: hidden; /* 超出部分隐藏 */
+                background-color: #fff; /* 可选，为图片不足的部分设置背景色 */
+            }
+
+            .portfolio .portfolio-gallery .item img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto; /* 宽度自动，以维持图片宽高比 */
+                height: auto; /* 高度自动，以维持图片宽高比 */
+                max-width: 80%; /* 最大宽度为80%，确保图片不会超出容器 */
+                max-height: 80%; /* 最大高度为80%，确保图片不会超出容器 */
+                object-fit: contain; /* 保证图片被完整显示 */
+                transform: translate(-50%, -70%); /* 使图片在容器中居中显示 */
+                display: block;
+                margin-bottom: 0; /* 不需要这个，因为已经居中对齐 */
+            }
+
+            .portfolio .portfolio-gallery .item h3 {
+                font-size: 18px; /* 增大字体大小 */
+                font-weight: bold; /* 字体加粗 */
+                margin-bottom: 5px; /* 在标题和学校名称之间添加一些间距 */
+            }
+
+            .portfolio .portfolio-gallery .item .school {
+                font-size: 14px;
+                color: grey; /* 学校名称的字体颜色 */
+            }
+
+@media(max-width:767px) {
+
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        padding: 8px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

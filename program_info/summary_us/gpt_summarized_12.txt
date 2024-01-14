@@ -1,0 +1,20 @@
+[13]
+
+项目名称：Master of Urban Spatial Analytics（城市空间分析硕士）
+
+学校：University of Pennsylvania（宾夕法尼亚大学）
+
+院系：Stuart Weitzman School of Design and the Penn Institute for Urban Research（斯图尔特·魏茨曼设计学院和宾夕法尼亚大学城市研究所）
+
+关键词：空间分析，数据科学，公共政策，城市规划，GIS，R和Python编程，数据可视化，网络地图
+
+项目概述：城市空间分析硕士项目旨在培养新一代的数据科学家，以解决复杂的公共政策问题。我们的学生和教师使用地理空间计算方法和开源软件工具，通过数据驱动的决策来创造积极的变化。
+
+项目时长：1年
+
+申请截止日期：未提供
+
+网页链接： https://www.design.upenn.edu/musa/about
+
+
+
